@@ -25,10 +25,10 @@ minify:
 # 首页文章列表 + 摘要（类似 Lil'Log 的日志流）
 params:
   env: production
-  title: "Hang's Log"
+  title: "Jason's Log"
   description: "记录 AI 工程相关的个人思考与实践"
-  keywords: [AI, LLM, Engineering, Blog]
-  author: "Hang"
+  keywords: [AI, LLM, Engineering, Blog, Solution]
+  author: "Jason"
   defaultTheme: auto        # auto / light / dark，右上角可切换
   disableThemeToggle: false
   ShowReadingTime: true
@@ -44,7 +44,7 @@ params:
 
   # 首页顶部的个人简介区块
   homeInfoParams:
-    Title: "👋 你好，我是 Hang"
+    Title: "👋 Hello，我是 Jason"
     Content: >
       这里记录我在 AI 工程（LLM 应用、Agent、推理与训练工程等）方向的个人想法、实践笔记与踩坑总结。
       文章不定期更新，欢迎交流。
