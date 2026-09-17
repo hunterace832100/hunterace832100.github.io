@@ -1,0 +1,97 @@
+baseURL: "https://hunterace832100.github.io/"
+title: "Hang's Log"
+theme: "PaperMod"
+
+defaultContentLanguage: "zh"
+languages:
+  zh:
+    label: "中文"
+    locale: "zh-CN"
+    weight: 1
+
+# GitHub Pages 用户主页无子路径，保持默认即可
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+pagination:
+  pagerSize: 10
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+# 首页文章列表 + 摘要（类似 Lil'Log 的日志流）
+params:
+  env: production
+  title: "Hang's Log"
+  description: "记录 AI 工程相关的个人思考与实践"
+  keywords: [AI, LLM, Engineering, Blog]
+  author: "Hang"
+  defaultTheme: auto        # auto / light / dark，右上角可切换
+  disableThemeToggle: false
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowToc: true
+  tocopen: false
+  ShowRssButtonInSectionTermList: true
+  comments: false
+
+  # 首页顶部的个人简介区块
+  homeInfoParams:
+    Title: "👋 你好，我是 Hang"
+    Content: >
+      这里记录我在 AI 工程（LLM 应用、Agent、推理与训练工程等）方向的个人想法、实践笔记与踩坑总结。
+      文章不定期更新，欢迎交流。
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/hunterace832100"
+
+  # 代码高亮由 Hugo 内置 Chroma 处理，见下方 markup
+  assets:
+    disableHLJS: true
+
+# 顶部导航菜单
+menu:
+  main:
+    - identifier: posts
+      name: 文章
+      url: /posts/
+      weight: 10
+    - identifier: archives
+      name: 归档
+      url: /archives/
+      weight: 20
+    - identifier: tags
+      name: 标签
+      url: /tags/
+      weight: 30
+    - identifier: search
+      name: 搜索
+      url: /search/
+      weight: 40
+
+# 搜索功能需要输出 JSON 索引
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+# 代码高亮
+markup:
+  highlight:
+    noClasses: false
+    codeFences: true
+    guessSyntax: true
+    lineNos: false
+    style: monokai
+  goldmark:
+    renderer:
+      unsafe: true   # 允许在 Markdown 中使用少量 HTML
