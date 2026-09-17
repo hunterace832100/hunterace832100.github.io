@@ -44,14 +44,13 @@ params:
 
   # 首页顶部的个人简介区块
   homeInfoParams:
-    Title: "👋 Hello，我是 Jason"
+    Title: "👋 Hello，Welcome to Jason's Log"
     Content: >
-      这里记录我在 AI 工程（LLM 应用、Agent、推理与训练工程等）方向的个人想法、实践笔记与踩坑总结。
-      文章不定期更新，欢迎交流。
+      这里记录我在 AI 工程和解决方案（LLM 应用、Agent、推理与训练工程等）方向的个人想法
 
-  socialIcons:
-    - name: github
-      url: "https://github.com/hunterace832100"
+  # socialIcons:
+  #   - name: github
+  #     url: "https://github.com/hunterace832100"
 
   # 代码高亮由 Hugo 内置 Chroma 处理，见下方 markup
   assets:
