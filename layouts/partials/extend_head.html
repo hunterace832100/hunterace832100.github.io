@@ -1,0 +1,4 @@
+{{- /* 扩展 <head>：当文章 front matter 里 math: true 时，注入 KaTeX */ -}}
+{{ if .Param "math" }}
+{{ partialCached "math.html" . }}
+{{ end }}
