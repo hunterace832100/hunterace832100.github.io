@@ -1,0 +1,28 @@
+/* 统一文章内图片的显示宽度并居中 */
+.post-content img {
+  display: block;
+  margin: 1.2em auto;
+  width: 100%;          /* 统一铺到下面的 max-width */
+  max-width: 720px;     /* 想更大/更小改这一行即可 */
+  height: auto;
+}
+
+/* 仅含一张图片的段落，去掉多余行距 */
+.post-content p:has(> img:only-child) {
+  text-align: center;
+  margin: 0;
+}
+
+/* 图片下方紧跟的斜体文字作为图注：![alt](x.png) 换行后 *说明* */
+.post-content img + em,
+.post-content figcaption {
+  display: block;
+  text-align: center;
+  font-size: 0.875em;
+  color: var(--secondary);
+}
+
+/* 需要例外时：![alt](x.png#small) / #large / #raw */
+.post-content img[src$="#small"] { max-width: 420px; }
+.post-content img[src$="#large"] { max-width: 100%; }
+.post-content img[src$="#raw"] { width: auto; max-width: 100%; }
