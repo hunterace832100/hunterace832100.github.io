@@ -1,0 +1,110 @@
+---
+title: "Capable, Not Reliable: The 2026 AI Frontier"
+date: 2026-09-17T19:25:47+08:00
+draft: true
+tags: ["AI评测"]
+summary: "AI能力迅猛发展的今天，其能力边界正被不断扩张，其实很难给出一个确切的定义"
+ShowToc: true
+---
+
+> 在2026年，AI的能力边界在哪里？
+
+
+## 能力边界定义
+
+最初人们认为AI的能力是实验室中的试验品，是特定任务领域的解决方案（图像/语音识别）。但在2022年ChatGPT的发布，使得AI能力第一次真正走入大众视野被大家广泛使用。23年GPT-4现象级的推出，彻底开始了此次AI大基建和大革命。23年GPT-4只能生成高质量文字，24年2月Sora便能够生成高质量视频，5月OPENAI发布GPT-4o，将推理过程中的思考过程可视化，真正看到了推理过程的思维链。24年春节Deepseek发布的V3/R1，在成本大幅降低的情况下，实现较高的模型性能，引起行业地震。25年至26年，Anthropic、OPENAI、Google又在模型性能上疯狂军备竞赛，国内Kimi、智谱、千问的模型性能也在大幅提升。各种类型的任务，都被AI逐步掌握。
+
+AI能力迅猛发展的今天，其能力边界正被不断扩张，其实很难给出一个确切的定义。但有一些概念和思想，是通用的，可以用来指导我们理解。
+
+### 锯齿状的能力边界
+
+在[Navigating the Jagged Technological Frontier](https://mitsloan.mit.edu/sites/default/files/2023-10/SSRN-id4573321.pdf) 一文中，提到了Jagged Technological Frontier的概念，即技术能够影响的边界是锯齿状的，而非平滑的。这篇2023年的论文，在chatgpt4发布的基础上进行实验和讨论，虽然实验具体的任务对于2026年的模型已经基本被更好解决，但是作者也同时预测到“模型的能力还在迅速增强，但是其在处理不同类型任务的能力上，还是存在不平衡的情况”。
+
+![The Jagged Frontier](../llm_limit_2026/frontier.png)
+*图片来源：[Navigating the Jagged Technological Frontier](https://mitsloan.mit.edu/sites/default/files/2023-10/SSRN-id4573321.pdf)*
+对于人类来说相同难度的任务，可能对于AI来说难度是各不相同的，这造成了AI能力的锯齿状边界。
+
+### 边界的维度
+
+对模型能力的评测是一件必要且复杂的事情，在[HELM](https://arxiv.org/abs/2211.09110)之前，对于模型的评价都是碎片化非体系的。其主导使用透明、全面且标准化的模型基准测试与评估体系。核心思想评估理念是将评估拆解为多个维度。这些维度对后来的大模型评估产生了结构性的影响。
+
+核心能力包括：准确性（Accuracy）、鲁棒性（Robustness）、安全性（Safety）、校准度（Calibration）
+
+社会影响方面：偏见（bias）、毒性（toxicity）以及版权和隐私风险
+
+效率和成本上考虑：推理延迟（Latency）、Token消耗和计算成本（Cost per task）。
+
+目前常见的顶级评测项目有[Arena](https://arena.ai/)：对用户匿名模型进行公开评测
+[Artificial Analysis](https://artificialanalysis.ai/)：综合提供多项能力测试
+主流的大模型评测集有MMLU（Massive Multitask Language Understanding）：多学科综合考试
+GPQA Diamond：专业科学知识和推理能力
+Humanity's Last Exam：高难度综合知识与推理
+SWE-bench：真实软件功能能力
+
+![intell_index_vs_cost](../llm_limit_2026/intell_index_vs_cost.png)
+*图片来源：[Artificial Analysis](https://artificialanalysis.ai/)*
+*Cost per Task vs Intelligent Index*
+
+### 与人类工时对比
+
+能力边界在不断拓宽，各个维度边界在生长，但是这个过程中，模型能力随时间如何增长，相对于人类能力，如何界定才算“能做”？
+
+[METR](https://metr.org/time-horizons/)则提供了评测模型这一能力的框架
+
+其核心思想是：人类专家在某段时间内能完成任务的基准上，AI模型能够在50%和80%的成功率下完成任务的最长时间。以人能够直觉理解的工时作为基准，可以看到模型能力的50%成功率最长工时时间，随着时间的推移其翻倍时间在不断缩短。
+
+![METR Metric](../llm_limit_2026/METR.png)
+*图片来源：[METR](https://metr.org/time-horizons/)*
+
+## 目前已经能做什么
+
+这里主要参考Stanford的[AI Index 2026报告](https://hai.stanford.edu/ai-index/2026-ai-index-report)，这篇报告全面的展示了2026年AI在各个领域发展的现状。对于应用者和解决方案提供者，更重要的是了解模型在边界内外的表现差异，以帮助解决具体的实际需求，所以参考重点主要在Technical Perfomance部分。
+
+### 文本相关能力
+
+目前模型已经具备比较强的文本理解与表达能力，但需要对“答得好、找的全、做得对”进行详细的了解
+
+#### 文本理解与知识问答
+
+目前已经在[MMLU-Pro](https://arxiv.org/abs/2406.01574)多学科选择题上达到约87%~92%的成绩，MMLU-Pro标准通常指达到或超过各个领域前10%熟练的人类水平，共包含1.2万道题和14个学科，覆盖数学、物理、计算机、法律和历史等。主要观察模型的知识广度，以及运用知识推理解题的能力。这一指标因模型成绩趋于饱和，不再能显著区分模型水平，已经在近期停止测试新模型。
+![MMLU_PRO_vals](../llm_limit_2026/MMLU_PRO_vals.png)
+*图片来源：[VALS MMLU PRO评测](https://www.vals.ai/benchmarks/mmlu_pro)*
+
+#### 文本生成
+
+文本生成的质量通常在评估时依赖人类的主观判断，同时质量高低取决于用户的prompt输入，所以通常是像[Arena](https://arena.ai)这样的项目，让使用者对模型输出质量进行评价，来作为模型文本生成质量的部分打分依据，目前看领先的模型都能够较好的生成连贯的回答。
+![test_leaderboard_arena](../llm_limit_2026/test_leaderboard_arena.png)
+*图片来源：[Arena](https://arena.ai)*
+
+#### 检索与工具连接
+
+在模型实际部署使用过程中，通常需要将模型输出与外部工具进行链接，以完成复杂的任务。目前在文本方面主要有3个主要的能力：RAG（retrieval-augmented generation）、function calling和test embedding，这三方面的能力决定了模型在较复杂系统中实际表现能力。
+
+RAG功能的出现主要是为解决检索增强生成（retrieval-augmented generation）的能力，即模型能够在生成文本时，能够从外部知识库中检索相关知识，以增强生成内容的准确性和相关性。通过检索到的相关知识，模型能够更准确地理解任务背景，从而生成更准确、更符合上下文要求的回答。最早在2024年微软研究院提出的[Graph RAG](https://arxiv.org/abs/2404.16130)中被提出，使用方可自行搭建检索流程或使用第三方模型公司已经搭建的工具链实现RAG功能。
+
+Function calling能力允许模型调用外部工具或API来生成结构化的request返回给模型，以用于多轮重复这个过程来完成复杂的任务。这也是Agent工具最底层的基础能力，有这些工具和外界提供的其他能力，模型将远超越已有自身训练参数所带来的能力。[Berkeley Function Calling Leaderboard（BFCL）](https://gorilla.cs.berkeley.edu/leaderboard.html)是用于评判模型此能力的项目。目前从公开评测来看，前沿的模型已经能够完成工具选择、参数填写、多工具调用、以及根据返回结果继续执行的能力。后续更多模型使用者其实更关注function calling带来的端到端agent效果的评测，较少关注function calling这样细分能力的评测。
+
+Text Embedding能力则主要用在检索类agent中，模型能够理解输入的语义，主要用于从知识库中检索相关知识、进行相似度比较和聚类等任务。[MTEB](https://arxiv.org/pdf/2210.07316)则提出了大规模文本嵌入评测基准，目前已经能够较好的处理用词不同、含义相关的匹配，以及跨语言的检索以及跨模态的检索功能。
+
+#### 长文本处理
+
+
+
+## 边界主要在哪里
+
+### 处理超长上下文能力
+
+模型支持的上下文长度context，这一指标从2023年中约数10K，以每年差不多30x的速度增长，在2026年最前沿模型支持的最大上下文长度已经达到了1000K。而在类似Fiction.liveBench、MRCR这样的长上下文任务评测中，在以达到80%准确率为标准的前提下，最前沿模型能够处理的上下文甚至以3000x每年的增长速度在野蛮增长。
+
+看似模型在吞噬所有长上下文任务，是不是？要知道1000K的上下文长度，相当于多本普通数据或一整个代码库的所有代码。但是在某些专家任务中，发现模型能够处理上下文长度的增长和能够深度理解这些上下文，实际上还有很大的gap。一项专家级别的[长上下文评测LongBench v2实验中](https://aclanthology.org/2025.acl-long.183.pdf)中，发现人类专家专家在评测集上的得分约为53.7%（15分钟限制下），而最强大的模型达到57.7%，相较于其他指标显著超越人类专家，在这项评测上，模型的优势并不明显。
+
+而在[Yu et al.,2025](https://aclanthology.org/2025.findings-emnlp.301.pdf)的发现中，超长上下文的回答质量并不如循序渐进的prompt引导下那么好，以及在超长上下文下对于多线索的索引和寻找能力上也表现一般。同时如果一次性使用较长的上下文，模型的相应时间和计算成本也会大幅上涨。也许Transformer架构下的LLM模型，如果想无限制的拓展上下文，必然无法避免计算复杂度和显存的瓶颈。
+
+如果上下文长度和有效信息利用上能够做到更好的平衡，同时研究更完善的评测方法。相较人类，也许模型在长上下文任务中能够展现更大的优势。
+
+![context-windows-science](../llm_limit_2026/context-windows-science.png)
+*图片来源：[epoch.ai](https://epoch.ai/data-insights/context-windows)*
+
+
+
+## 相关证据

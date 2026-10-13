@@ -1,0 +1,4 @@
+/* 仅加宽单篇文章正文，不改首页、列表、导航和页脚 */
+body:not(.list) .main {
+    max-width: calc(880px + var(--gap) * 2);
+}

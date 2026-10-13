@@ -28,7 +28,7 @@ params:
   title: "Jason's Log"
   description: "记录 AI 工程相关的个人思考与实践"
   keywords: [AI, LLM, Engineering, Blog, Solution]
-  author: "Jason"
+  author: "Jason Yang"
   defaultTheme: auto        # auto / light / dark，右上角可切换
   disableThemeToggle: false
   ShowReadingTime: true
