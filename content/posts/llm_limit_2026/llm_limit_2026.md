@@ -109,6 +109,7 @@ Text Embedding能力则主要用在检索类agent中，模型能够理解输入�
 
 #### 通用推理能力
 
+通用推理能力主要指模型解决不熟悉的问题能力，不依赖与已有训练数据中的领域知识或记忆模式，比如计算长整数的乘法，而不是仅仅尝试生成看起来对的答案。[MMMU](https://mmmu-benchmark.github.io/)（Massive Multi-discipline Multimodal Understanding）评测主要针对大学级别的学科问题进行评测
 
 ## 边界主要在哪里
 
