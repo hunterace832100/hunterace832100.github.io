@@ -85,9 +85,29 @@ RAG功能的出现主要是为解决检索增强生成（retrieval-augmented gen
 Function calling能力允许模型调用外部工具或API来生成结构化的request返回给模型，以用于多轮重复这个过程来完成复杂的任务。这也是Agent工具最底层的基础能力，有这些工具和外界提供的其他能力，模型将远超越已有自身训练参数所带来的能力。[Berkeley Function Calling Leaderboard（BFCL）](https://gorilla.cs.berkeley.edu/leaderboard.html)是用于评判模型此能力的项目。目前从公开评测来看，前沿的模型已经能够完成工具选择、参数填写、多工具调用、以及根据返回结果继续执行的能力。后续更多模型使用者其实更关注function calling带来的端到端agent效果的评测，较少关注function calling这样细分能力的评测。
 
 Text Embedding能力则主要用在检索类agent中，模型能够理解输入的语义，主要用于从知识库中检索相关知识、进行相似度比较和聚类等任务。[MTEB](https://arxiv.org/pdf/2210.07316)则提出了大规模文本嵌入评测基准，目前已经能够较好的处理用词不同、含义相关的匹配，以及跨语言的检索以及跨模态的检索功能。
+![embedding_model](../llm_limit_2026/embedding_model.png)
 
-#### 长文本处理
+### 图像和视频处理
 
+#### 视频理解
+
+视频理解能力要求模型能够从视频中学习，跟踪多帧间的行为、目标和相关事件，并从在视频学习后迁移知识用于后续任务。经典的benchmark有[MVBench](https://huggingface.co/spaces/OpenGVLab/MVBench_Leaderboard) 将视频模型的temporal understanding（时序理解）拆分成了20类任务，用于判断一个模型到底有没有真正理解动作顺序、状态变化和交互。
+
+更复杂的benchmark有[Video-MMMU](https://arxiv.org/abs/2501.13826) ，将题目分为感知、理解和迁移三个层次。感知部分需要模型能够从视频中获取关键信息，理解则需要其抓取视频主要概念和相关事件，而迁移则需要将学习到的这些知识在新的场景中进行运用。在Video-MMMU的人类基线准确率是74.4%，而目前最前沿的模型能力已经超过了这一数字，[MMMU-Video最新eaderboard](https://github.com/EvolvingLMMs-Lab/VideoMMMU#-video-mmmu-leaderboard) 
+
+![video_mmmu](../llm_limit_2026/video_mmmu.png)
+
+#### 图像和视频生成
+
+视频生成领域也在不断发展，评价主要是在画面质量和内容是否成立两个方面，画面内容是否清晰美观，运动是否看起来自然。内容成立上看人物和物体是否保持一致，动作是否符合要求，物理过程是否合理。在这个评价过程中还是有主观人类打分和客观评价两种评测方法，Arena Vision就是使用人类主观感受来对模型效果打分，因为对美感的评价目前无法使用自动的评测标准来评价。目前Gemini的模型在视频生成方面打分较高。同时还有Video-Bench、VBench-2.0这样的评测项目。
+![vision_arena](../llm_limit_2026/vision_arena.png)
+*图片来源：[Stanford AI Index](https://hai.stanford.edu/ai-index)*
+
+同时在2025年[Google DeepMind的一项研究](https://arxiv.org/pdf/2509.20328)中发现,如Veo3这样的视频生成模型，可以解决一些训练过程中从未涉及的视觉任务，同时存在零样本任务特性，能够完成边缘检测、图像分割、浮力和刚体特性的物理建模这些从未训练过的任务。
+
+### 推理归因能力
+
+#### 通用推理能力
 
 
 ## 边界主要在哪里
@@ -105,6 +125,9 @@ Text Embedding能力则主要用在检索类agent中，模型能够理解输入�
 ![context-windows-science](../llm_limit_2026/context-windows-science.png)
 *图片来源：[epoch.ai](https://epoch.ai/data-insights/context-windows)*
 
+### 视频生成无法真实模拟物理过程
+
+虽然在上述提到的Google DeepMind的研究中发现Veo3这样的模型能够生成表达浮力或刚体特性的视频。但是在2026年也有部分研究发现（[RigidBench研究](https://arxiv.org/pdf/2608.15555)），发现大多数生成的视频无法真实模拟物理过程，模型只是生成了符合人类偏好评测中的“真实物理”，并不能证明存在物理过程。
 
 
 ## 相关证据
