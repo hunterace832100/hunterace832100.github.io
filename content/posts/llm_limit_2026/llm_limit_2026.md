@@ -109,7 +109,15 @@ Text Embedding能力则主要用在检索类agent中，模型能够理解输入�
 
 #### 通用推理能力
 
-通用推理能力主要指模型解决不熟悉的问题能力，不依赖与已有训练数据中的领域知识或记忆模式，比如计算长整数的乘法，而不是仅仅尝试生成看起来对的答案。[MMMU](https://mmmu-benchmark.github.io/)（Massive Multi-discipline Multimodal Understanding）评测主要针对大学级别的学科问题进行评测
+通用推理能力主要指模型解决不熟悉的问题能力，不依赖与已有训练数据中的领域知识或记忆模式，比如计算长整数的乘法，而不是仅仅尝试生成看起来对的答案。[MMMU](https://mmmu-benchmark.github.io/)（Massive Multi-discipline Multimodal Understanding）评测主要针对大学级别的学科问题进行评测，需要模型通过图表、表格以及学科专业图示进行推理回答问题，目前各个前沿模型也基本达到了人类专家高水平参考组的基准。
+
+GPQA则是一项研究生级科学问答评测，测试模型能否结合专业知识完成多步推理。在2024年GPT-4早期在这项评测集上的准确率大概是38%左右，而在2025年底，openai相关模型已经能够达到90%以上的水准。
+![[Pasted image 20261014212121.png|529]]
+*图片来源：[Stanford AI Index](https://hai.stanford.edu/ai-index)*
+
+Humanity’s Last Exam (HLE) 被称作人类最后的考试，是跨学科的专家级问题测试模型。2025年最前沿模型的准确率在38.3%左右，而在最新的测试结果中，GPT-6 Astra 为 **59.9%**、Gemini 4 Argon 为 **56.9%**、Claude Opus 5.5 为 **54.6%**。GPT-6 Astra 在允许网页和代码工具时达到82.9%。它说明模型解答专家级、可核验学术问题的能力进步很快。
+![[Pasted image 20261014212813.png]]
+*图片来源：[HLE-Diamond](https://lastexam.ai/blog/hle-diamond)*
 
 ## 边界主要在哪里
 
@@ -130,5 +138,6 @@ Text Embedding能力则主要用在检索类agent中，模型能够理解输入�
 
 虽然在上述提到的Google DeepMind的研究中发现Veo3这样的模型能够生成表达浮力或刚体特性的视频。但是在2026年也有部分研究发现（[RigidBench研究](https://arxiv.org/pdf/2608.15555)），发现大多数生成的视频无法真实模拟物理过程，模型只是生成了符合人类偏好评测中的“真实物理”，并不能证明存在物理过程。
 
+#### 一些有趣的发现
 
-## 相关证据
+模型能够回答归因专家级别的专业题目，但是在识别模拟钟表时的表现却距离人类相差较远
