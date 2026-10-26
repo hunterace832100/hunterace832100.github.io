@@ -3,6 +3,7 @@ title: "Jason's Log"
 theme: "PaperMod"
 
 defaultContentLanguage: "zh"
+hasCJKLanguage: true
 languages:
   zh:
     label: "中文"
