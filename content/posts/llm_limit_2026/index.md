@@ -4,16 +4,13 @@ date: 2026-09-17T19:25:47+08:00
 draft: false
 tags:
   - AI评测
-summary: AI能力迅猛发展的今天，其能力边界正被不断扩张，其实很难给出一个确切的定义
+summary: 在2026年，AI的能力边界在哪里？AI能力迅猛发展的今天，其能力边界正被不断扩张，其实很难给出一个确切的定义
 ShowToc: true
 aliases:
   - /posts/llm_limit_2026/llm_limit_2026/
 ---
 
-> 在2026年，AI的能力边界在哪里？
-
-
-## 能力边界定义
+## 能力边界的定义
 
 最初人们认为AI的能力是实验室中的试验品，是特定任务领域的解决方案（图像/语音识别）。但在2022年ChatGPT的发布，使得AI能力第一次真正走入大众视野被大家广泛使用。23年GPT-4现象级的推出，彻底开始了此次AI大基建和大革命。23年GPT-4只能生成高质量文字，24年2月Sora便能够生成高质量视频，5月OPENAI发布GPT-4o，将推理过程中的思考过程可视化，真正看到了推理过程的思维链。24年春节Deepseek发布的V3/R1，在成本大幅降低的情况下，实现较高的模型性能，引起行业地震。25年至26年，Anthropic、OPENAI、Google又在模型性能上疯狂军备竞赛，国内Kimi、智谱、千问的模型性能也在大幅提升。各种类型的任务，都被AI逐步掌握。
 
@@ -21,9 +18,9 @@ AI能力迅猛发展的今天，其能力边界正被不断扩张，其实很难
 
 ### 锯齿状的能力边界
 
-在[Navigating the Jagged Technological Frontier](https://mitsloan.mit.edu/sites/default/files/2023-10/SSRN-id4573321.pdf) 一文中，提到了Jagged Technological Frontier的概念，即技术能够影响的边界是锯齿状的，而非平滑的。这篇2023年的论文，在chatgpt4发布的基础上进行实验和讨论，虽然实验具体的任务对于2026年的模型已经基本被更好解决，但是作者也同时预测到“模型的能力还在迅速增强，但是其在处理不同类型任务的能力上，还是存在不平衡的情况”。
+在[Navigating the Jagged Technological Frontier](https://mitsloan.mit.edu/sites/default/files/2023-10/SSRN-id4573321.pdf) 一文中，提到了Jagged Technological Frontier的概念，即技术能够影响的边界是锯齿状的，而非平滑的。这篇2023年的论文，在ChatGPT4发布的基础上进行实验和讨论，虽然实验具体的任务对于2026年的模型已经基本被更好解决，但是作者也同时预测到“模型的能力还在迅速增强，但是其在处理不同类型任务的能力上，还是存在不平衡的情况”。
 
-![The Jagged Frontier](frontier.png)
+![The Jagged Frontier](../llm_limit_2026/frontier.png)
 *图片来源：[Navigating the Jagged Technological Frontier](https://mitsloan.mit.edu/sites/default/files/2023-10/SSRN-id4573321.pdf)*
 对于人类来说相同难度的任务，可能对于AI来说难度是各不相同的，这造成了AI能力的锯齿状边界。
 
@@ -31,22 +28,28 @@ AI能力迅猛发展的今天，其能力边界正被不断扩张，其实很难
 
 对模型能力的评测是一件必要且复杂的事情，在[HELM](https://arxiv.org/abs/2211.09110)之前，对于模型的评价都是碎片化非体系的。其主导使用透明、全面且标准化的模型基准测试与评估体系。核心思想评估理念是将评估拆解为多个维度。这些维度对后来的大模型评估产生了结构性的影响。
 
-核心能力包括：准确性（Accuracy）、鲁棒性（Robustness）、安全性（Safety）、校准度（Calibration）
+**核心能力**：准确性（Accuracy）、鲁棒性（Robustness）、安全性（Safety）、校准度（Calibration）
 
-社会影响方面：偏见（bias）、毒性（toxicity）以及版权和隐私风险
+**社会影响**：偏见（bias）、毒性（toxicity）以及版权和隐私风险
 
-效率和成本上考虑：推理延迟（Latency）、Token消耗和计算成本（Cost per task）。
-
-目前常见的顶级评测项目有[Arena](https://arena.ai/)：对用户匿名模型进行公开评测
-[Artificial Analysis](https://artificialanalysis.ai/)：综合提供多项能力测试
-主流的大模型评测集有MMLU（Massive Multitask Language Understanding）：多学科综合考试
-GPQA Diamond：专业科学知识和推理能力
-Humanity's Last Exam：高难度综合知识与推理
-SWE-bench：真实软件功能能力
+**效率和成本**：推理延迟（Latency）、Token消耗和计算成本（Cost per task）
 
 ![intell_index_vs_cost](intell_index_vs_cost.png)
-*图片来源：[Artificial Analysis](https://artificialanalysis.ai/)*
-*Cost per Task vs Intelligent Index*
+*图片来源：[Artificial Analysis](https://artificialanalysis.ai/)  Cost per Task vs Intelligent Index*
+
+目前常见的顶级评测项目有
+
+[Arena](https://arena.ai/)：对用户匿名模型进行公开评测
+
+[Artificial Analysis](https://artificialanalysis.ai/)：综合提供多项能力测试
+
+主流的大模型评测集有MMLU（Massive Multitask Language Understanding）：多学科综合考试
+
+GPQA Diamond：专业科学知识和推理能力
+
+Humanity's Last Exam：高难度综合知识与推理
+
+SWE-bench：真实软件功能能力
 
 ### 与人类工时对比
 
@@ -81,7 +84,7 @@ SWE-bench：真实软件功能能力
 
 #### 检索与工具连接
 
-在模型实际部署使用过程中，通常需要将模型输出与外部工具进行链接，以完成复杂的任务。目前在文本方面主要有3个主要的能力：RAG（retrieval-augmented generation）、function calling和test embedding，这三方面的能力决定了模型在较复杂系统中实际表现能力。
+在模型实际部署使用过程中，通常需要将模型输出与外部工具进行链接，以完成复杂的任务。目前在文本方面主要有3个主要的能力：RAG（retrieval-augmented generation）、function calling和 text embedding，这三方面的能力决定了模型在较复杂系统中的实际表现能力。
 
 RAG功能的出现主要是为解决检索增强生成（retrieval-augmented generation）的能力，即模型能够在生成文本时，能够从外部知识库中检索相关知识，以增强生成内容的准确性和相关性。通过检索到的相关知识，模型能够更准确地理解任务背景，从而生成更准确、更符合上下文要求的回答。最早在2024年微软研究院提出的[Graph RAG](https://arxiv.org/abs/2404.16130)中被提出，使用方可自行搭建检索流程或使用第三方模型公司已经搭建的工具链实现RAG功能。
 
@@ -180,3 +183,17 @@ AI想真实在物理世界产生价值，除了在屏幕上处理文本和图片
 ### 一些有趣的发现
 
 模型能够回答归因专家级别的专业题目，但是在识别模拟钟表时的表现却距离人类相差较远。模型在区分不同类型的指针时容易混淆出错，同时较难在单张图片中寻找多条视觉线索。但这一指标目前随着前沿模型的迭代，正在慢慢逼近人类水平。
+
+## Reference
+
+- [Stanford AI Index](https://hai.stanford.edu/ai-index)
+- [epoch.ai](https://epoch.ai/)
+- [HLE-Diamond](https://lastexam.ai/blog/hle-diamond)
+- [pi07](https://www.pi.website/blog/pi07)
+- [Gemini Robotics](https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/)
+- [DeepMind](https://deepmind.com/)
+- [DeepMind Blog](https://deepmind.google/blog/)
+- [OpenGVLab](https://open-mmlab.github.io/mmrazor/zh_CN/)
+- [MVBench](https://huggingface.co/spaces/OpenGVLab/MVBench_Leaderboard)
+- [Video-MMMU](https://arxiv.org/abs/2501.13826)
+- [MMMU-Video最新eaderboard](https://github.com/EvolvingLMMs-Lab/VideoMMMU
