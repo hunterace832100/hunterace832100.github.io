@@ -47,11 +47,17 @@ params:
   homeInfoParams:
     Title: "👋 Hello，Welcome to Jason's Log"
     Content: >
-      这里记录我在 AI 工程和解决方案（LLM 应用、Agent、推理与训练工程等）方向的个人想法
+      这里记录我在AI算法、工程和解决方案（自动驾驶、LLM 应用、Agent、推理与训练工程等）方向的个人想法
 
-  # socialIcons:
-  #   - name: github
-  #     url: "https://github.com/hunterace832100"
+  # 首页社交图标：点击图标后在旁边展示联系方式文本（不跳转邮件客户端 / 不跳转链接）
+  # title 字段即点击后展示的文本
+  socialIcons:
+    - name: email
+      title: "ytianhang@126.com"
+      url: "#"
+    - name: wechat
+      title: "hang498224021"   # TODO: 替换成你的真实微信号/微信名
+      url: "#"
 
   # 代码高亮由 Hugo 内置 Chroma 处理，见下方 markup
   assets:

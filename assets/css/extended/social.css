@@ -1,0 +1,16 @@
+/* 社交图标：点击后在图标旁展示联系方式文本（配合 layouts/partials/social_icons.html） */
+.social-icons a.social-contact {
+    gap: 6px;
+}
+
+.social-icons .contact-reveal {
+    display: none;
+    font-size: 15px;
+    line-height: 1;
+    white-space: nowrap;
+    user-select: all; /* 方便访客直接选中复制 */
+}
+
+.social-icons a.social-contact.revealed .contact-reveal {
+    display: inline;
+}

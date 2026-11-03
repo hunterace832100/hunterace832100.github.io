@@ -1,0 +1,12 @@
+{{- /* 覆盖 PaperMod 默认 social_icons：点击图标后在旁边展示联系方式文本，不跳转。
+       socialIcons 的 title 字段即点击后展示的文本。 */ -}}
+<div class="social-icons" {{ with .align }}align="{{ . }}" {{- end }}>
+    {{- range site.Params.socialIcons }}
+    {{- $reveal := .title | default .name }}
+    <a href="#" role="button" class="social-contact" aria-label="{{ $reveal }}" title="{{ $reveal }}"
+        onclick="event.preventDefault(); this.classList.toggle('revealed');">
+        {{ partial "svg.html" . }}
+        <span class="contact-reveal">{{ $reveal }}</span>
+    </a>
+    {{- end }}
+</div>
