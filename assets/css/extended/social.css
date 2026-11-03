@@ -14,3 +14,11 @@
 .social-icons a.social-contact.revealed .contact-reveal {
     display: inline;
 }
+
+/* 首页简介区块：取消主题默认的 320px 最小高度与垂直居中，让高度随内容自适应，
+   减少标题/图标下方以及与文章列表之间的大片空白 */
+.first-entry.home-info {
+    min-height: auto;
+    justify-content: flex-start;
+    margin-block: var(--gap);
+}
