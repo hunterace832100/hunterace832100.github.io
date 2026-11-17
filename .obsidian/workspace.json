@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/llm_limit_2026/llm_limit_2026.md",
-                "mode": "preview",
+                "file": "content/posts/the_origin_and_impact_of_hallucination/index.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "llm_limit_2026"
+              "title": "index"
             }
           }
         ]
@@ -83,8 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "93dc9e78bf1da64f",
@@ -100,8 +99,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/llm_limit_2026/llm_limit_2026.md",
-                "collapseAll": false,
+                "file": "content/posts/the_origin_and_impact_of_hallucination/index.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -162,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/llm_limit_2026/llm_limit_2026.md",
+                "file": "content/posts/the_origin_and_impact_of_hallucination/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -171,7 +170,8 @@
               "title": "大纲"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -188,8 +188,9 @@
       "bases:新建数据库": false
     }
   },
-  "active": "92c4b20140a42ae4",
+  "active": "4a547b7e42e9930f",
   "lastOpenFiles": [
+    "Pasted image 20261117094839.png",
     "Pasted image 20261018205318.png",
     "Pasted image 20261018202503.png",
     "Pasted image 20261014212813.png",
