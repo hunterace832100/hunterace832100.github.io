@@ -1,4 +1,32 @@
-/* 仅加宽单篇文章正文，不改首页、列表、导航和页脚 */
+/* Shared warm palette for the home page, article lists and articles. */
+:root {
+    --theme: #faf9f5;
+    --entry: #faf9f5;
+    --primary: #24231f;
+    --content: #35342f;
+    --secondary: #706e65;
+    --border: #deddd5;
+    --code-bg: #f0efe8;
+    --research-accent: #ad5c40;
+}
+
+:root[data-theme="dark"] {
+    --theme: #242420;
+    --entry: #2b2b26;
+    --primary: #eeede6;
+    --content: #d5d4cc;
+    --secondary: #aaa89d;
+    --border: #45453c;
+    --code-bg: #303029;
+    --research-accent: #dfa58b;
+}
+
+/* PaperMod normally uses the code background for lists. */
+body.list {
+    background: var(--theme);
+}
+
+/* Preserve the existing width of other standalone pages. */
 body:not(.list) .main {
     max-width: calc(880px + var(--gap) * 2);
 }

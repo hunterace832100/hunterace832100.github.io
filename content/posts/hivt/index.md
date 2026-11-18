@@ -8,7 +8,9 @@ summary: Hierarchical_Vector_Transformer_for_Multi-Agent_Motion_Prediction
 ShowToc: true
 ---
 
-文章链接：[Zhou_HiVT_Hierarchical_Vector_Transformer_for_Multi-Agent_Motion_Prediction_CVPR_2022](https://openaccess.thecvf.com/content/CVPR2022/papers/Zhou_HiVT_Hierarchical_Vector_Transformer_for_Multi-Agent_Motion_Prediction_CVPR_2022_paper.pdf)
+文章链接：
+[Zhou_HiVT_Hierarchical_Vector_Transformer_for_Multi-Agent_Motion_Prediction_CVPR_2022](https://openaccess.thecvf.com/content/CVPR2022/papers/Zhou_HiVT_Hierarchical_Vector_Transformer_for_Multi-Agent_Motion_Prediction_CVPR_2022_paper.pdf)
+
 代码链接：[https://github.com/ZikangZhou/HiVT?tab=readme-ov-file](https://github.com/ZikangZhou/HiVT?tab=readme-ov-file)
 ## 简述
 * 难点问题

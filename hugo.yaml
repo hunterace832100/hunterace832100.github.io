@@ -39,7 +39,7 @@ params:
   ShowCodeCopyButtons: true
   ShowWordCount: true
   ShowToc: true
-  tocopen: false
+  tocopen: true
   ShowRssButtonInSectionTermList: true
   comments: false
 

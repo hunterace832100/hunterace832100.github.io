@@ -4,24 +4,84 @@
     "type": "split",
     "children": [
       {
-        "id": "637857a844ce0b19",
-        "type": "tabs",
+        "id": "4d127d7fff18ed22",
+        "type": "split",
         "children": [
           {
-            "id": "4a547b7e42e9930f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/posts/the_origin_and_impact_of_hallucination/index.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "index"
-            }
+            "id": "d9978f2f2ed05b65",
+            "type": "tabs",
+            "dimension": 75.61904761904762,
+            "children": [
+              {
+                "id": "48000a58da24bff3",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "content/posts/hivt/index.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "index"
+                }
+              }
+            ]
+          },
+          {
+            "id": "97b0bda80e0ea720",
+            "type": "tabs",
+            "dimension": 24.38095238095238,
+            "children": [
+              {
+                "id": "4887ed13ec6a2cb4",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "terminal:terminal",
+                  "state": {
+                    "terminal:terminal": {
+                      "cwd": "/Users/jasonyang/Documents/hunterace832100.github.io",
+                      "focus": false,
+                      "profile": {
+                        "args": [
+                          "--login"
+                        ],
+                        "environment": [],
+                        "executable": "/bin/zsh",
+                        "followTheme": true,
+                        "name": "",
+                        "platforms": {
+                          "darwin": true
+                        },
+                        "pythonExecutable": "python3",
+                        "restoreHistory": false,
+                        "rightClickAction": "copyPaste",
+                        "successExitCodes": [
+                          "0",
+                          "SIGINT",
+                          "SIGTERM"
+                        ],
+                        "terminalOptions": {
+                          "documentOverride": null
+                        },
+                        "type": "integrated",
+                        "win32Backend": "conpty"
+                      },
+                      "profileSourceId": "darwinIntegratedDefault",
+                      "serial": null,
+                      "userTitle": ""
+                    }
+                  },
+                  "pinned": true,
+                  "icon": "terminal:tab-bezel",
+                  "title": "zsh"
+                }
+              }
+            ]
           }
-        ]
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -55,7 +115,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:幻觉",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -99,7 +159,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/the_origin_and_impact_of_hallucination/index.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +177,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/llm_limit_2026/llm_limit_2026.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +219,6 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/the_origin_and_impact_of_hallucination/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -169,9 +226,19 @@
               "icon": "lucide-list",
               "title": "大纲"
             }
+          },
+          {
+            "id": "20ca4987cd161524",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -185,22 +252,40 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "bases:新建数据库": false
+      "bases:新建数据库": false,
+      "obsidian-git:Open Git source control": false,
+      "terminal:Open terminal": false
     }
   },
-  "active": "4a547b7e42e9930f",
+  "active": "4887ed13ec6a2cb4",
   "lastOpenFiles": [
-    "Pasted image 20261117094839.png",
-    "Pasted image 20261018205318.png",
-    "Pasted image 20261018202503.png",
-    "Pasted image 20261014212813.png",
-    "Pasted image 20261014212121.png",
-    "Pasted image 20261014212112.png",
+    "content/posts/hivt/index.md",
+    "content/posts/the_origin_and_impact_of_hallucination/index.md",
+    "public/css/research-article.min.7c5348bcb025ad789061f2f18c80a9ecf6feadb7ae960dcb5197be8a7a724e92.css",
+    "public/assets/css/stylesheet.490541114d9f60c81921773552d5acaf25b208e064585151f885be96065a105b.css",
+    "public/tags/模型幻觉/index.xml",
+    "public/tags/模型幻觉/page/1/index.html",
+    "public/tags/模型幻觉/page/1",
+    "public/tags/模型幻觉/page",
+    "public/tags/模型幻觉/index.html",
+    "public/tags/模型幻觉",
+    "public/tags/幻觉/index.xml",
+    "public/tags/幻觉/page/1/index.html",
+    "public/posts/the_origin_and_impact_of_hallucination/hallucination-impact.png",
+    "content/posts/the_origin_and_impact_of_hallucination/hallucination-impact.png",
+    "写作手册.md",
+    "themes/PaperMod/images/tn.png",
+    "themes/PaperMod/images/screenshot.png",
+    "themes/PaperMod/README.md",
+    "public/posts/llm_limit_2026/vision_arena.png",
+    "public/posts/llm_limit_2026/video_mmmu.png",
+    "public/posts/llm_limit_2026/test_leaderboard_arena.png",
+    "public/posts/safe_trajectory_generation_using_st_corridor/无保护左转.png",
+    "public/posts/llm_limit_2026/pi07.png",
+    "public/posts/safe_trajectory_generation_using_st_corridor/城市快速路overtake.png",
+    "first-post.md",
+    "content/posts/safe_trajectory_generation_using_st_corridor/index.md",
     "content/posts/llm_limit_2026/llm_limit_2026.md",
-    "content/posts/llm_limit_2026.md",
-    "content/posts/intell_index_vs_cost.png",
-    "content/posts/frontier.png",
-    "content/posts/MMLU-PRO.png",
-    "content/posts/METR.png"
+    "content/posts/llm_limit_2026.md"
   ]
 }
